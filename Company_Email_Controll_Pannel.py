@@ -11,8 +11,8 @@ from email.utils import make_msgid
 import mimetypes
 import htmlAttacment
 def send_email(day1content,day1subject,reciverEmail,username):
-        sender_address = 'info@livbhealthy.com'
-        sender_pass = 'Sabasafta40!'
+        sender_address = 'Email'
+        sender_pass = 'Password'
         receiver_address = reciverEmail
         client = username
         #Setup the MIME
@@ -23,7 +23,7 @@ def send_email(day1content,day1subject,reciverEmail,username):
         msg['To'] = receiver_address
 
         # set the plain text body
-        msg.set_content('LiveBHealthy')
+        msg.set_content('Content')
 
         # now create a Content-ID for the image
         image_cid = make_msgid(domain='xyz.com')
@@ -59,7 +59,7 @@ def send_email(day1content,day1subject,reciverEmail,username):
         # so we use [1:-1] to strip them off
 
         with open('resources\Images\logo.png', 'rb') as img:
-
+                 
                 # know the Content-Type of the image
                 maintype, subtype = mimetypes.guess_type(img.name)[0].split('/')
 
