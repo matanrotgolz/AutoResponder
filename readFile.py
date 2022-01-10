@@ -1,6 +1,5 @@
 import csv
-list1= ["gidon bar oz","leanne bar oz","libi bar oz"]
-filename =  "C:\\Users\\matan\\OneDrive\\Desktop\\"+"TESTFILE2"+".csv"
+filename =  "C:\\Users\\Root\\To\\File\\"+"TESTFILE2"+".csv"
 def readFile ():
     Datalist =[]
     with open(filename) as csv_file:
