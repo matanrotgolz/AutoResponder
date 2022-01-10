@@ -1,6 +1,6 @@
 from csv import writer
 excelName = "ComapnyDataexample1"
-filename =  "C:\\Users\\matan\\OneDrive\\Desktop\\"+excelName+".csv"
+filename =  "C:\\Users\\Root\\To\\Excel_File_In_Client_computer\\"+excelName+".csv"
 # List 
 
 
