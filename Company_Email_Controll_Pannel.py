@@ -9,7 +9,6 @@ from email.mime.text import MIMEText
 from email.message import EmailMessage
 from email.utils import make_msgid
 import mimetypes
-import daysContent
 import htmlAttacment
 def send_email(day1content,day1subject,reciverEmail,username):
         sender_address = 'info@livbhealthy.com'
@@ -59,7 +58,7 @@ def send_email(day1content,day1subject,reciverEmail,username):
         # to use it as the img src, we don't need `<` or `>`
         # so we use [1:-1] to strip them off
 
-        with open('./logo.png', 'rb') as img:
+        with open('resources\Images\logo.png', 'rb') as img:
 
                 # know the Content-Type of the image
                 maintype, subtype = mimetypes.guess_type(img.name)[0].split('/')

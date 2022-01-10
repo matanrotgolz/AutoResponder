@@ -1,6 +1,6 @@
 import docx 
 def updating(filename):
-    doc = docx.Document("C:\\Users\\matan\\OneDrive\\Desktop\\CompanyCodes\\DaysContent"+filename+".docx")
+    doc = docx.Document("C:\\Users\\matan\\OneDrive\\Desktop\\CompanyCodes\\DaysContent\\"+filename+".docx")
     fulltext = []
     contentstr = ''
     for para in doc.paragraphs:

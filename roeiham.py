@@ -8,7 +8,6 @@ def test(filename,data):
             for j in range(len(data)):
                 if lines[i][1]in data [j][0]:
                     if(int(lines[i][2]) == 10):
-                        print("the client is: "+lines[0][1])
                         number = 0
                         lines[i][2] = number 
                         write.openAndWrite(filename,lines)
